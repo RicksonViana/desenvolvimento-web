@@ -1,0 +1,12 @@
+function doDemo(button) {
+  var square = document.getElementById("square");
+  square.style.backgroundColor = "#1F1F5E";
+  button.setAttribute("disabled", "true");
+  setTimeout(clearDemo, 2000, button);
+}
+
+function clearDemo(button) {
+  var square = document.getElementById("square");
+  square.style.backgroundColor = "transparent";
+  button.removeAttribute("disabled");
+}
